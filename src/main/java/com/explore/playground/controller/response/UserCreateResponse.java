@@ -1,20 +1,18 @@
-package com.example.testvalidation;
+package com.explore.playground.controller.response;
 
+import com.explore.playground.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Type;
-
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.FetchType;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
-public class UserCreateRequest {
+public class UserCreateResponse {
+
+    private Long id;
 
     private String phone;
 

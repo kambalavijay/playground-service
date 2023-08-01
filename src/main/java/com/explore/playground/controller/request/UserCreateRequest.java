@@ -1,5 +1,6 @@
-package com.example.testvalidation;
+package com.explore.playground.controller.request;
 
+import com.explore.playground.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,9 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Builder
-public class UserCreateResponse {
-
-    private Long id;
+public class UserCreateRequest {
 
     private String phone;
 

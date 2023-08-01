@@ -1,10 +1,10 @@
-package com.example.testvalidation;
+package com.explore.playground;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TestValidationApplicationTests {
+class PlaygroundServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

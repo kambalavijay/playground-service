@@ -1,12 +1,13 @@
-package com.example.testvalidation;
+package com.explore.playground.client;
 
 
+import com.explore.playground.model.Post;
+import com.explore.playground.util.HttpUtil;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.http.GET;
-import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
 

@@ -1,4 +1,4 @@
-package com.example.testvalidation;
+package com.explore.playground.entity;
 
 
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;

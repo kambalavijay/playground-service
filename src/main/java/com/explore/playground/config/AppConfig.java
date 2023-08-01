@@ -1,4 +1,4 @@
-package com.example.testvalidation;
+package com.explore.playground.config;
 
 import com.google.gson.Gson;
 import com.zaxxer.hikari.util.UtilityElf;

@@ -1,4 +1,4 @@
-package com.example.testvalidation;
+package com.explore.playground.exceptions;
 
 import lombok.Getter;
 

@@ -1,6 +1,8 @@
-package com.example.testvalidation;
+package com.explore.playground.util;
 
 import java.util.concurrent.CompletableFuture;
+
+import com.explore.playground.exceptions.HttpApiException;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

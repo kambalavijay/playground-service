@@ -1,5 +1,6 @@
-package com.example.testvalidation;
+package com.explore.playground.repository;
 
+import com.explore.playground.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

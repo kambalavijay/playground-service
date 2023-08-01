@@ -1,19 +1,9 @@
-package com.example.testvalidation;
+package com.explore.playground.exceptions.handler;
 
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.FieldError;
-import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
-import org.springframework.web.bind.MissingRequestHeaderException;
-import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
-
-import javax.validation.ConstraintViolationException;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -22,9 +12,9 @@ import java.util.Map;
 import java.util.TreeMap;
 
 @ControllerAdvice
-public class SynapseUserExceptionHandler {
+public class ExceptionHandler {
 
-    @ExceptionHandler(value = {MethodArgumentNotValidException.class})
+    @org.springframework.web.bind.annotation.ExceptionHandler(value = {MethodArgumentNotValidException.class})
     public ResponseEntity handleMethodArgumentNotValidException(MethodArgumentNotValidException ex) {
         Map<String, Object> additionalInfo = new TreeMap<>();
         List<String> messages = new ArrayList<>();

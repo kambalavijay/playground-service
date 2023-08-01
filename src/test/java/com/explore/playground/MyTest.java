@@ -1,4 +1,4 @@
-package com.example.testvalidation;
+package com.explore.playground;
 
 import org.junit.jupiter.api.Test;
 

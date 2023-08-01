@@ -1,16 +1,13 @@
-package com.example.testvalidation;
+package com.explore.playground.controller;
 
+import com.explore.playground.model.Post;
+import com.explore.playground.client.TypeicodeClient;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Optional;
 import java.util.concurrent.CompletionStage;
 
 @RestController

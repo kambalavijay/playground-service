@@ -1,4 +1,4 @@
-package com.example.testvalidation;
+package com.explore.playground.model;
 
 
 import lombok.AllArgsConstructor;
