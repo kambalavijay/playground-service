@@ -4,6 +4,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,9 +13,9 @@ import java.util.Map;
 import java.util.TreeMap;
 
 @ControllerAdvice
-public class ExceptionHandler {
+public class PlayGroundExceptionHandler {
 
-    @org.springframework.web.bind.annotation.ExceptionHandler(value = {MethodArgumentNotValidException.class})
+    @ExceptionHandler(value = {MethodArgumentNotValidException.class})
     public ResponseEntity handleMethodArgumentNotValidException(MethodArgumentNotValidException ex) {
         Map<String, Object> additionalInfo = new TreeMap<>();
         List<String> messages = new ArrayList<>();
