@@ -1,12 +1,12 @@
 package com.explore.playground.util;
 
-import java.util.concurrent.CompletableFuture;
-
 import com.explore.playground.exceptions.HttpApiException;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.internal.EverythingIsNonNull;
+
+import java.util.concurrent.CompletableFuture;
 
 public final class HttpUtil {
     private HttpUtil() throws IllegalAccessException {

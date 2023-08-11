@@ -4,7 +4,8 @@ import org.springframework.http.HttpStatus;
 
 public enum ErrorCode {
 
-    PGERR1000("Unexpected server error occurred", HttpStatus.INTERNAL_SERVER_ERROR);
+    PGERR1000("Unexpected server error occurred", HttpStatus.INTERNAL_SERVER_ERROR),
+    PGERR1001("Cart not found", HttpStatus.FOUND);
     private String errorDesc;
     private HttpStatus status;
 

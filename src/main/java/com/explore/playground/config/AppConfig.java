@@ -1,25 +1,15 @@
 package com.explore.playground.config;
 
 import com.google.gson.Gson;
-import com.zaxxer.hikari.util.UtilityElf;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
-import org.jetbrains.annotations.NotNull;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.SynchronousQueue;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
 
 @Configuration
 public class AppConfig {
@@ -28,7 +18,6 @@ public class AppConfig {
     private final String typicodeBaseUrl;
     private final boolean enableOkhttpLogs;
     private final Gson gson;
-
 
     public AppConfig(@Value("${typeicode.base.url}") String typicodeBaseUrl,
                      @Value("${enableOkhttpLogs:true}") boolean enableOkhttpLogs,

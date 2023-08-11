@@ -1,7 +1,7 @@
 package com.explore.playground.controller;
 
-import com.explore.playground.model.Post;
 import com.explore.playground.client.TypeicodeClient;
+import com.explore.playground.model.Post;
 import org.modelmapper.ModelMapper;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

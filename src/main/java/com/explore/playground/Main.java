@@ -1,21 +1,26 @@
 package com.explore.playground;
 
+import org.apache.commons.codec.digest.HmacUtils;
+
 import java.io.IOException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Main {
-    private String prop;
 
     public static void main(String[] args) throws InterruptedException, IOException {
-        String s = "{0B4E8000B915F976}8yJl0w8COgZcXRZUXDyscV8UC+1MrDkCqmuZivOm1GY=";
-        Pattern p = Pattern.compile("\\{(.*)}(.*)");
-        Matcher m = p.matcher(s);
-        if (m.find()) {
-            String IV = m.group(1);
-            System.out.println(IV);
-            System.out.println(m.group(2));
-        }
+
+        String hmacMD5Algorithm = "HmacSHA256";
+        String data = "abc@test.com";
+        String key = "c3BhcnJhb3dfbG9jYWxfa2V5";
+
+        System.out.println(hmacWithApacheCommons(hmacMD5Algorithm, data, key));
+        System.out.println(hmacWithApacheCommons(hmacMD5Algorithm, data, key));
+        System.out.println(hmacWithApacheCommons(hmacMD5Algorithm, data, key));
+        System.out.println(hmacWithApacheCommons(hmacMD5Algorithm, data, key));
     }
 
+
+    public static String hmacWithApacheCommons(String algorithm, String data, String key) {
+        String hmac = new HmacUtils(algorithm, key).hmacHex(data);
+        return hmac;
+    }
 }
